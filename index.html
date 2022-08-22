@@ -32,7 +32,8 @@
               <h2 class="card-title">Cristiano Ronaldo</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
@@ -42,7 +43,8 @@
               <h2 class="card-title">Casemiro</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
@@ -52,18 +54,20 @@
               <h2 class="card-title">Kylian Mbappé</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
-          
+
           <div class="card w-full bg-black shadow-xl rounded-none">
             <figure><img src="images/ramos.jpg" alt="Shoes" /></figure>
             <div class="card-body">
               <h2 class="card-title">Sergio Ramos</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
@@ -73,7 +77,8 @@
               <h2 class="card-title">Lionel Messi</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
@@ -83,16 +88,17 @@
               <h2 class="card-title">Neymar Jr.</h2>
               <p>30 Goal . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary text-white rounded-none px-12 text-md" onclick="addToList(this)">Select</button>
+                <button class="btn btn-primary text-white rounded-none px-12 text-md select-btn"
+                  onclick="addToList(this);this.disabled=true;">Select</button>
               </div>
             </div>
           </div>
-          
+
         </div>
         <!-- aside  -->
         <div class="grid grid-cols-1 gap-4">
           <div class="card w-72 h-auto  bg-black shadow-xl rounded-none">
-            <h1 class="text-center text-2xl text-white pt-5">Selected - <span id="selected-players">0</span></h1>
+            <h1 class="text-center text-2xl text-white pt-5 pb-2">Selected - <span id="selected-players">0</span></h1>
             <progress class="progress progress w-full" value="35" max="35"></progress>
             <table>
               <tbody id="display-players">
@@ -101,16 +107,18 @@
             </table>
           </div>
           <div class="card w-72 text-white bg-black shadow-xl rounded-none">
-            <h1 class="text-center text-2xl text-white pt-5">Budget</h1>
+            <h1 class="text-center text-2xl text-white pt-5 pb-2">Budget</h1>
             <progress class="progress progress w-full" value="35" max="35"></progress>
-            <span class=" my-5 ml-3 text-md">Per Player <input class="bg-gray-800" type="text" name="" id="per-player-expence"></span>
+            <span class=" my-5 ml-3 text-md">Per Player <input class="bg-gray-800" type="text" name=""
+                id="per-player-expence"></span>
             <button class="btn btn-outline btn-primary mx-16" id="calculate-btn">Calculate</button>
-            <h2 class="text-center my-4 text-lg font-bold">Player Expences: $<span class="text-lg text-orange-600" id="player-expences">0</span></h2>
-            <span class=" mb-2 ml-3 text-md">Manager <input class="bg-gray-800" type="text" name="" id=""></span>
-            <span class="ml-7 text-md">Couch <input class="bg-gray-800" type="text" name="" id="">
+            <h2 class="text-center my-4 text-lg font-bold">Player Expences: $ <span class="text-lg text-orange-600"
+                id="player-expences">0</span></h2>
+            <span class=" mb-2 ml-3 text-md">Manager <input class="bg-gray-800" type="text" name="" id="manager-expence"></span>
+            <span class="ml-7 text-md">Couch <input class="bg-gray-800" type="text" name="" id="couch-expence">
             </span>
-            <button class="btn btn-outline btn-primary mx-16 my-4">Calculate Total</button>
-            <h2 class="text-center text-lg font-bold">Total: $<span class="text-lg text-orange-600">0</span></h2>
+            <button class="btn btn-outline btn-primary mx-16 my-4" id="calculate-total-btn">Calculate Total</button>
+            <h2 class="text-center text-lg font-bold">Total: $ <span class="text-lg text-orange-600" id="total-expences">0</span></h2>
           </div>
         </div>
       </div>
