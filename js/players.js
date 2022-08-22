@@ -4,11 +4,17 @@ function displayList(){
     const displayPlayers = document.getElementById('display-players');
     displayPlayers.textContent = '';
     for(let i = 0; i < players.length; i++){
+        
+        if(i > 4){
+            alert('Maximum added exceeded')
+            return;
+        }
         const tr = document.createElement('tr');
         tr.innerHTML = `
         <th>${i+1}.</th>
         <td>${players[i]}</td>
         `;
+        
         displayPlayers.appendChild(tr);
     }
 }
