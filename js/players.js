@@ -54,6 +54,9 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const perPlayerExpence = getInputFieldValueById('per-player-expence');
 
   const expencesAsPlayerNum = perPlayerExpence * (numberOfPlayer + 1);
+  if(isNaN(expencesAsPlayerNum)){
+    return;
+  }
 
   const playerExpences = document.getElementById('player-expences');
   playerExpences.innerText = expencesAsPlayerNum;
@@ -63,9 +66,11 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const playerExpences = getTextValueById('player-expences');
     const managerExpence = getInputFieldValueById('manager-expence');
     const couchExpence = getInputFieldValueById('couch-expence');
-    console.log(couchExpence);
 
     const totalExpences = playerExpences + managerExpence + couchExpence;
+    if(isNaN(totalExpences)){
+      return;
+    }
 
     const total = document.getElementById('total-expences');
     total.innerText = totalExpences;
