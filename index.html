@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
   <title>Top Five Players</title>
   <style>
-    .bg-image{
+    .bg-image {
       background-image: url(images/cr.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -30,7 +30,7 @@
   </header>
 
   <main>
-    <section class=" mt-5 mb-20 w-9/12 mx-auto">
+    <section class=" mt-10 mb-20 w-9/12 mx-auto">
       <div class="flex flex-auto gap-4">
         <div class="grid grid-cols-3 w-full text-center  gap-4">
           <div class="card w-full bg-black shadow-xl rounded-none">
@@ -104,7 +104,8 @@
         <!-- aside  -->
         <div class="grid grid-cols-1 gap-4">
           <div class="card w-72 h-auto  bg-black shadow-xl rounded-none">
-            <h1 class="text-center text-2xl text-orange-200 pt-5 pb-2">Selected - <span id="selected-players">0</span></h1>
+            <h1 class="text-center text-2xl text-orange-200 pt-5 pb-2">Selected - <span id="selected-players">0</span>
+            </h1>
             <progress class="progress progress w-full" value="35" max="35"></progress>
             <table>
               <tbody id="display-players">
@@ -118,11 +119,12 @@
             <span class=" my-5 ml-3 text-md text-orange-200">Per Player <input class="bg-gray-800" type="text" name=""
                 id="per-player-expence"></span>
             <button class="btn btn-outline btn-primary mx-16" id="calculate-btn">Calculate</button>
-            <h2 class="text-center my-4 text-lg font-bold text-orange-200">Player Expences: $ <span class="text-lg text-orange-600"
-                id="player-expences">0</span></h2>
+            <h2 class="text-center my-4 text-lg font-bold text-orange-200">Player Expences: $ <span
+                class="text-lg text-orange-600" id="player-expences">0</span></h2>
             <span class=" mb-2 ml-3 text-md text-orange-200">Manager <input class="bg-gray-800" type="text" name=""
                 id="manager-expence"></span>
-            <span class="ml-7 text-md text-orange-200">Couch <input class="bg-gray-800" type="text" name="" id="couch-expence">
+            <span class="ml-7 text-md text-orange-200">Couch <input class="bg-gray-800" type="text" name=""
+                id="couch-expence">
             </span>
             <button class="btn btn-outline btn-primary mx-16 my-4" id="calculate-total-btn">Calculate Total</button>
             <h2 class="text-center text-lg font-bold text-orange-200">Total: $ <span class="text-lg text-orange-600"
@@ -134,7 +136,7 @@
   </main>
   <footer>
     <div class="flex flex-col w-full">
-      <div class="divider"></div> 
+      <div class="divider"></div>
       <h3 class="text-center pt-8 text-orange-200 font-bold">Copyright @ 2022 All Rights Reserved.</h3>
     </div>
   </footer>
